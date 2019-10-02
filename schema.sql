@@ -1,0 +1,10 @@
+DROP DATABASE IF EXISTS todo_listDB;
+CREATE DATABASE todo_listDB;
+USE todo_listDB;
+
+CREATE TABLE todos (
+  id INT NOT NULL AUTO_INCREMENT,
+  description VARCHAR(255) NOT NULL,
+  is_done BOOLEAN DEFAULT false,
+  PRIMARY KEY (id)
+);
